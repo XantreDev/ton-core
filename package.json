@@ -16,9 +16,9 @@
         "!__tests__"
     ],
     "scripts": {
-        "build": "rm -fr dist && tsc -p ./tsconfig.build.json",
+        "build": "rm -fr dist && tsc",
         "test": "jest --verbose",
-        "typecheck": "tsc",
+        "typecheck": "tsc && tsc -p ./tsconfig.node.json",
         "format": "biome format --write .",
         "format:check": "biome format .",
         "coverage": "jest --verbose -c ./jest-coverage.config.js",
